@@ -16,10 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      {/* THE FIX IS HERE: We apply the theme colors directly to the body */}
-      <body className={`${inter.className} bg-background text-foreground`}>
-        {children}
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
